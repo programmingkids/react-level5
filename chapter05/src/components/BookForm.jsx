@@ -59,7 +59,7 @@ export const BookForm = ({setList}) => {
         />
         <Button 
           size="large" 
-          variant="contained" 
+          variant="contained"
           onClick={handleOnClick}>
           登録
         </Button>

@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 
 import { createData } from './BookCreateData';
 import { BookForm } from './BookForm';
@@ -27,8 +28,10 @@ export const BookApp = () => {
           </Typography>
         </Toolbar>
       </AppBar>
-      <BookForm setList={setList} />
-      <BookTable list={list} />
+      <Container>
+        <BookForm setList={setList} />
+        <BookTable list={list} />
+      </Container>
     </Box>
   );
 };
