@@ -9,9 +9,10 @@ export const BookForm = ({setList}) => {
   const [book, setBook] = useState(createEmptyData());
   
   const handleOnChange = (e) => {
-    const b = {...book};
-    b[e.target.id] = e.target.value;
-    setBook(prev => b);
+    setBook((book) => ({
+      ...book,
+      [e.target.id]: e.target.value,
+    }));
   };
   
   const handleOnClick = (e) => {
